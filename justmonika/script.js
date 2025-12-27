@@ -1,9 +1,9 @@
 //noise stuff
 const CONFIG = {
-  NOISE_W: 1920 / 2,
-  NOISE_H: 1080 / 2,
-  ov: { speed: 0.022, whiteness: 0.0 },
-  fpsCap: 10,
+  NOISE_W: 1920 / 1.5,
+  NOISE_H: 1080 / 1.5,
+  ov: { speed: 0.022, whiteness: 0.5 },
+  fpsCap: 30,
   noiseUpdateMs: 80
 };
 
@@ -99,7 +99,7 @@ const CONFIG = {
     drawOverlay();
   }
   function playSequence() {
-    setTimeout(() => nowText && nowText.classList.add('show'), 10000);
+    setTimeout(() => nowText && nowText.classList.add('show'), 3000);
   }
   function enableAudioOnInteraction() {
     if (!ambient || !ambient.src) return;
